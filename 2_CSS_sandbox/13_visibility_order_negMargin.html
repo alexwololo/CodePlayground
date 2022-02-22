@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      /* normally styling at bottom takes precedence but targetting class overides targetting elements */
+
+      /* it is possible to have negative marging, but not padding */
+      .hello {
+        color: red;
+        margin-top: -30px;
+      }
+
+      /* !important overides*/
+      h1 {
+        /* display removes it from the DOM*/
+        /* display: none; */
+        /* visibility makes it disapear but it will still take up the space*/
+        /* visibility: hidden; */
+        color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hello">Heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      beatae. Quibusdam eaque ratione inventore mollitia ut corrupti, doloribus
+      repellendus! Architecto.
+    </p>
+  </body>
+</html>

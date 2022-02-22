@@ -32,3 +32,6 @@ ctrl + space
 
 ## skapa id o class
 #id .class
+
+## Kopiera och pasta kod upp/ner
+shift + alt + up/nerpil
