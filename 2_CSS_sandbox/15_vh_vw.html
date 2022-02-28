@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vh & vw Units</title>
+    <style>
+      * {
+        /* border-box for "box-sizing so padding does not affect width */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* font-size: 10px; */
+
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        background: #333 url(https://source.unsplash.com/daily) no-repeat center
+          center/cover;
+        color: #fff;
+        height: 50vh;
+        /* width: 50vw; */
+        text-align: center;
+        padding: 2rem;
+        padding-top: 100px;
+      }
+
+      header h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        margin: 1rem 0;
+        font-size: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        /* font-size: 18px; */
+        background: #7870c7;
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 5px;
+        color: #fff;
+      }
+
+      section {
+        padding: 1rem;
+      }
+
+      @media (max-height: 450px) {
+        header {
+          padding-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, placeat.
+        Quasi id reprehenderit sed debitis ad nesciunt. Ea, facere tempore!
+      </p>
+      <a href="" class="btn">Find out more!</a>
+    </header>
+
+    <section>
+      <h3>Header</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit impedit aperiam repellat sapiente sunt mollitia deserunt, accusamus itaque dolorum nemo, earum veritatis quos provident doloremque voluptatibus beatae labore assumenda consectetur nisi alias enim. Adipisci ipsa laborum, animi aperiam hic soluta rem reiciendis cupiditate magni consequuntur officia placeat magnam veritatis sit numquam. Pariatur, fugiat ullam delectus assumenda, quis tempora temporibus sapiente beatae commodi eligendi, aut aliquam reprehenderit quae quaerat deleniti distinctio esse at! Reprehenderit perferendis, quia dolorum eligendi distinctio optio iste quisquam fugit nemo ratione ullam voluptatibus ad consequatur fuga iure. Iusto, voluptatibus saepe quod quibusdam nostrum blanditiis quidem suscipit nulla.</p>
+    </section>
+  </body>
+</html>

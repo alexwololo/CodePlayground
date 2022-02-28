@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>EM & REM</title>
+  </head>
+  <style>
+    /* Change root font size*/
+    html {
+      /* font-size: 10px; */
+      /* to make it more responsive */
+      font-size: 62.5%;
+    }
+
+    /* EM */
+    /* When using EM then we add fontsize to parent element and browser setting for sieze wont show an effect */
+    #box-1 {
+      font-size: 20px;
+    }
+    #box-1 p {
+      font-size: 1.5em;
+      /* padding will be 30px cause it goes on its parent */
+      padding: 1em;
+    }
+
+    #box-1 ul {
+      font-size: 1.2em;
+    }
+
+    /* REM - better accessability more precise*/
+    #box-2 h3 {
+      font-size: 2rem;
+    }
+    #box-2 p {
+      font-size: 1.6rem;
+      /* padding is now based on root, not the parent */
+      line-height: 1.7rem;
+    }
+  </style>
+  <body>
+    <div id="box-1">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illo ex
+        sapiente, voluptas adipisci dolor nostrum accusamus quam ut eius.
+      </p>
+      <li>1</li>
+      <li>
+        2
+        <ul>
+          <li>1</li>
+          <li>
+            2
+            <!-- The nested ul keeps getting bigger cause it goes on the parent ul -->
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>2</li>
+    </div>
+    <div id="box-2">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illo ex
+        sapiente, voluptas adipisci dolor nostrum accusamus quam ut eius.
+      </p>
+    </div>
+  </body>
+</html>

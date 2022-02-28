@@ -21,17 +21,32 @@ alt + upp/ned
 alt + vänster/högerpil
 
 ## Skapa flera kopior av samma tag
+
 p*5 li*10
 
+### Skapa numrerade kopior
+
+### li{$}*3 =
+<li>1</li>
+<li>2</li>
+<li>3</li>
 
 ## Markera fler förekomster av samma ord nedan
+
 ctrl + d och sedan escape när klar
 
 ## Se fler exempel
+
 ctrl + space
 
 ## skapa id o class
+
 #id .class
 
 ## Kopiera och pasta kod upp/ner
+
 shift + alt + up/nerpil
+
+## Inspektera i F12
+
+ctrl + shift + c
