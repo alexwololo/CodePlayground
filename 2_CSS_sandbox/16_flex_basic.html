@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basic</title>
+    <style>
+      * {
+        /* border-box for "box-sizing so padding does not affect width */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+      }
+
+      .item {
+        background: #f3f3f3;
+        border: #ddd solid 2px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        /* flex contains grow/shrink/basis(width) */
+        flex: 1 0 200px;
+        /* width: 200px; */
+        /* flex-grow: 1; */
+      }
+
+      /* .item-1{
+        flex-shrink: 0;
+      }
+      .item-2{
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .item-3{
+        flex-grow: 2;
+        flex-basis: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="flex-container">
+      <div class="item item-1">
+        <h3>Item 1</h3>
+      </div>
+      <div class="item item-2">
+        <h3>Item 2</h3>
+      </div>
+      <div class="item item-3">
+        <h3>Item 3</h3>
+      </div>
+    </section>
+  </body>
+</html>
