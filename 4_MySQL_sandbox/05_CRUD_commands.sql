@@ -66,11 +66,25 @@ SELECT cat_id, age FROM cats WHERE cat_id=age;
 SELECT * FROM cats WHERE cat_id=age;
 
 /*****************************************************/
-
+https://www.w3schools.com/sql/sql_alias.asp
 --Aliases
+-- SQL aliases are used to give a table, or a column in a table, a temporary name. Aliases are often used to make column names more readable.
+-- An alias only exists for the duration of that query. An alias is created with the AS keyword.
+
+-- Alias Column Syntax
+SELECT column_name AS alias_name
+FROM table_name;
+
+-- Alias Table Syntax
+SELECT column_name(s)
+FROM table_name AS alias_name;
+
 SELECT cat_id AS id, name FROM cats;
 SELECT name AS 'cat name', breed AS 'kitty breed' FROM cats;
 DESC cats;
+
+-- Aliases can be useful when:
+-- There are more than one table involved in a query. Functions are used in the query. Column names are big or not very readable. Two or more columns are combined together
 
 /*****************************************************/
 
@@ -121,3 +135,9 @@ DELETE FROM cats;
 SELECT * FROM cats;
 
 /*****************************************************/
+
+SELECT database(); -- see current database
+SHOW TABLES; -- see current table
+SELECT * FROM shirts; -- see all from database
+SHOW COLUMNS FROM shirts; -- see columns
+DESC shirts; -- see description
