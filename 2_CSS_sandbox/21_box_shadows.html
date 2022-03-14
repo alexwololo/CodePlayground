@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadows</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        margin: 1rem;
+        padding: 1rem;
+        background: coral;
+        color: #fff;
+
+        /* offset-x | offset-y | color */
+        box-shadow: 10px 10px teal;
+        border: solid 2px black;
+
+        /* offset-x | offset-y | color | blur-radius */
+        box-shadow: 10px 10px 20px teal;
+        border: solid 2px black;
+
+        /* negative values */
+        box-shadow: -10px -10px 20px teal;
+        border: solid 2px black;
+
+        /* offset-x | offset-y | color | blur-radius | color rgba*/
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+        border: solid 2px black;
+
+        /* inset | offset-y | color | blur-radius | color rgba*/
+        box-shadow: inset -3px -3px teal;
+        border: solid 2px black;
+
+        /* Multiple shadows */
+        box-shadow: 3px 3px 10px teal, -3px -3px 10px olive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          doloribus.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          doloribus.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          doloribus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
