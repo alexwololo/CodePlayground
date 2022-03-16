@@ -85,3 +85,9 @@ FROM books;
 | American G... | Gaiman,Neil | 12 in stock  |
 | A Heartbre... | Eggers,Dave | 104 in stock |
 +---------------+-------------+--------------+
+
+SELECT CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short title',
+       CONCAT(author_lname, ',', author_fname) AS author,
+       CONCAT(stock_quantity, ' in stock') AS quantity
+
+FROM books;
