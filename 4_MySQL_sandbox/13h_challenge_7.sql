@@ -30,3 +30,4 @@ INNER JOIN reviews
 INNER JOIN series
     ON series.id = reviews.series_id
 ORDER BY title;
+

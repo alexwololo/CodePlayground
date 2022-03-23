@@ -1,6 +1,7 @@
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  first_name  VARCHAR(100),
-  last_name  VARCHAR(100)
+CREATE TABLE reviewers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100)
 );
 DESC reviewers;
 
@@ -68,3 +69,35 @@ SELECT *
 FROM [table1]
 JOIN [table2]
 ON [table1.primary_key] = [table2.foreign_key];
+
+
+
+
+1. Threads (1984 TV Movie)
+112 min | Drama, Sci-Fi, Thriller
+
+2. Privilegiet (2022 TV Movie)
+107 min | Drama, Horror, Mystery
+
+6. Help (2021 TV Movie)
+98 min | Drama
+13. Gifted Hands (2009 TV Movie)
+86 min | Biography, Drama
+17. Cut, Color, Murder (2022 TV Movie)
+84 min | Crime, Mystery
+18. Gia (1998 TV Movie)
+R | 120 min | Biography, Drama, Romance
+22. The Dropout (2019 TV Movie)
+Documentary
+26. Girl from Compton (2016 TV Movie)
+87 min | Drama
+3. Silent Hours (2021 TV Movie)
+156 min | Crime, Thriller
+38. American Refugee (2021 TV Movie)
+94 min | Drama, Horror, Thriller
+41. Sharknado (2013 TV Movie)
+15 | 86 min | Action, Adventure, Comedy
+48. Z-O-M-B-I-E-S (2018 TV Movie)
+7 | 94 min | Family, Musical, Romance
+50. The Wizard of Lies (2017 TV Movie)
+133 min | Biography, Crime, Drama

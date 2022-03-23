@@ -13,7 +13,28 @@ SELECT Sum(stock_quantity) FROM BOOKS;
 -- Find the full name of the author who wrote the longest book
 SELECT AVG(released_year) FROM books GROUP BY author_lname, author_fname;
 
---
+-- MAKE THIS
++------+---------+-----------+
+| year | # books | avg pages |
++------+---------+-----------+
+| 1945 |       1 |  181.0000 |
+| 1981 |       1 |  176.0000 |
+| 1985 |       1 |  320.0000 |
+| 1989 |       1 |  526.0000 |
+| 1996 |       1 |  198.0000 |
+| 2000 |       1 |  634.0000 |
+| 2001 |       3 |  443.3333 |
+| 2003 |       2 |  249.5000 |
+| 2004 |       1 |  329.0000 |
+| 2005 |       1 |  343.0000 |
+| 2010 |       1 |  304.0000 |
+| 2012 |       1 |  352.0000 |
+| 2013 |       1 |  504.0000 |
+| 2014 |       1 |  256.0000 |
+| 2016 |       1 |  304.0000 |
+| 2017 |       1 |  367.0000 |
++------+---------+-----------+
+
 SELECT author_fname, author_lname, AVG(released_year) FROM books GROUP BY author_lname, author_fname;
 
 --

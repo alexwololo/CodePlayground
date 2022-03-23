@@ -19,13 +19,6 @@ Show avg rating and dont show duplicates or null
 +----------------------+------------+
 */
 
-
-
-
-
-
-
-
 -- start by selecting all
 SELECT *
 FROM series
