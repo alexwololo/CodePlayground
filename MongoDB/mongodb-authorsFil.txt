@@ -1,0 +1,111 @@
+** Skriv i terminalen för att öppna MongoDB Shell (mongosh)
+mongosh
+
+** Skapa en ny databas (eller öppna en redan skapad databas)
+use myAuthors
+
+** Skapar en collection (authors) med flera document
+* vi följer document-standard med key:value
+* (books sparar en array)
+db.authors.insertMany([
+    {
+        author: "Astrid Lindgren",
+        birth: 1907,
+        books: [
+            "Bröderna Lejonhjärta",
+            "Här kommer Pippi Långstrump",
+            "Mio min Mio"
+        ]
+    },
+    {
+        author: "August Strindberg",
+        birth: 1849,
+        books: [
+            "Hemsöborna",
+            "Röda rummet"
+        ]
+    }
+])
+
+** Visa alla documents i en collection
+db.authors.find( {} )
+
+** Visa ett specifikt document i en collection utifrån ett sökkriterie
+* Visar matchande författare
+db.authors.find( { author: "Astrid Lindgren"} )
+
+* Visar matchande bok
+db.authors.find( { books: "Mio min Mio"} )
+
+* Visar författare som är födda efter (greater then or equal)
+db.authors.find( { birth: { $gte: 1900 } } )
+
+* Visar författare som är födda innan (lesser then or equal to)
+db.authors.find( { birth: { $lte: 1900 } } )
+
+* Visar böcker som innehåller (inte exakt) genom regular expression
+db.authors.find( { books: {$regex:"Mio"} } )
+
+** CRUD (Create, Read, Update, Delete)
+* Lägg till ett document i en collection (authors) - Create
+db.authors.insertOne(
+    {
+        author: "Tolkien",
+        birth: 1892,
+        books: [
+            "Sagan om ringen",
+            "Sagan om de två tornen",
+            "Sagan om konungens återkomst"
+            ]
+    }
+    )
+
+* Visa alla documents i en collection - Read
+db.authors.find( {} )
+
+* Uppdaterar ett document i en collection - Update
+db.authors.updateOne(
+   { author: "Tolkien" },
+   {
+     $set: { author: "J.R.R Tolkien", books: [
+            "Bilbo - En hobbits äventyr",
+            "Sagan om ringen",
+            "Sagan om de två tornen",
+            "Sagan om konungens återkomst"
+            ]
+            }
+   }
+)
+
+* Ta bort ett document i en collection - Delete
+db.authors.deleteOne( { author: "J.R.R Tolkien" } )
+
+** Räknar hur många documents det finns i en collection
+db.authors.find().count()
+
+** Räknar hur många documents det finns i en collection utifrån ett kriterie
+db.authors.find( { author: { $gt: "Astrid Lindgren" } } ).count()
+
+** Uppdaterar alla documents i en collection genom att lägga till ett nytt item med key och value (language)
+db.authors.updateMany(
+   { },
+   {
+     $set: { language: "Swedish" }
+   }
+)
+
+** Uppdaterar ett specifikt document genom att lägga till ett nytt item med key och value (genres) som är en array.
+db.authors.updateOne(
+   { author: "Astrid Lindgren" },
+   {
+     $set: { genres: [
+            "Barn",
+            "Sagor",
+            "Fantasy"
+            ]
+            }
+   }
+)
+
+** Sök efter en specifik genre
+db.authors.find( { genres: "Sagor"} )
