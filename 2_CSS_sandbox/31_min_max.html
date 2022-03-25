@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MinMax</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-rows: 1fr 3fr 1fr; */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .item {
+        padding: 3rem;
+        border: 1px solid #ccc;
+        background: f4f4f4;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+
+
+    </div>
+  </body>
+</html>
+
+<!-- think of auto-fit in the terms of columns as, fit as many columns as you can into the space, I don't care about the number.  And minmax as, if you have in this case 300px of space, then space the items otherwise if you don't have space, make all of them 1fr and stack them on top of each other.  For Grid this is the equivalent of using media queries inline. -->
