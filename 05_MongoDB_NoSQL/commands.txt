@@ -4,6 +4,7 @@ https://www.mongodb.com/docs/manual/crud/
 MongoDB
 ATLAS cloud
 Compass
+mongosho
 
 //(Kopplar upp sig mot en lokal MongoDB)
 mongosh
@@ -22,12 +23,14 @@ show collections
 cls
 
 //show documents in collection - pretty
-db.authors.find({}).pretty
+db.authors.find({}).pretty()
 
 //Create new database
 //To create a new database execute the following command.
 use DATABASE_NAME
 
+//show databases
+show dbs
 
 //Know your current selected database
 //To know your current working/selected database execute the following command
@@ -59,6 +62,11 @@ WriteResult({"nInserted" : 1})
 //To insert multiple documents in selected collection execute following command
 //https://blog.e-zest.com/basic-commands-for-mongodb see 11
 
+
+//add custom id
+_id: 1
+_id: "test-123"
+
 //Get collection document
 //To get the list documents in collection execute the following command
 >db.COLLECTION_NAME.find()
@@ -75,3 +83,12 @@ WriteResult({"nInserted" : 1})
 // Delete document
 // To delete document in selected collection execute the following command
 >db.COLLECTION_NAME.remove(DELLETION_CRITTERIA)
+
+
+// find gives cursor object - not the element itself
+db.pass.find({})
+db.pass.find({}).toArray() // gives array
+
+// projection
+db.pass.find({}, {name: 1}) //show only name
+db.pass.find({}, {name: 1, _id: 0}) //exclude id

@@ -6,7 +6,6 @@ Shell. Därefter fortsätter du med följande steg/övningar (Spara all kod i sa
 en ny textfil för varje övning förutom att köra det i terminalen):*/
 
 
-
 /*1. Lägg till en ny författare med tillhörande böcker med insertOne med följande key:value - author, birth, books (som en array), language, genres (som en array).*/
 db.authors.insertOne(
   {
@@ -23,12 +22,25 @@ db.authors.insertOne(
     ]
   }
 )
-
+db.authors.insertOne(
+  {
+    author: "Linus Lingo",
+    birth: 1984,
+    books: [
+      "Bok 1",
+      "Bok 2",
+      "Bok 3"
+    ],
+    language: "Svenska",
+    genres: [
+      "Drama"
+    ]
+    }
+)
 
 
 //2. Räkna hur många författare det finns totalt.
 db.authors.find().count()
-
 
 
 //3. Räkna hur många författare som finns inom en viss genre.
@@ -36,34 +48,40 @@ db.authors.find().count()
 db.authors.find({ genres: "Drama"}).count()
 
 
-
 /*4. Uppdatera författarna Astrid lindgren, August Strindberg samt din nya författare du har lagt
 till så att de har key:value för death (med årtal när de dog).*/
 db.authors.updateOne(
-   { author: "Tolkien" },
-   {
-     $set: { author: "J.R.R Tolkien", books: [
-            "Bilbo - En hobbits äventyr",
-            "Sagan om ringen",
-            "Sagan om de två tornen",
-            "Sagan om konungens återkomst"
-            ]
-            }
-   }
+  { author: "Astrid Lindgren" },
+  {
+    $set: { death: 1990 }
+  }
+)
+db.authors.updateOne(
+  { author: "Linus Lingo" },
+  {
+    $set: { Death: 1625 }
+  }
+)
+db.authors.updateOne(
+  { author: "Astrid Lindgren" },
+  {
+    $set: { Death: 1995 }
+  }
 )
 
 
-
 //5. Räkna hur många författare som dog efter 1950.
-db.authors.find( { birth: { $gte: 1900 } } )
+db.authors.find( { Death: { $gte: 1950 } } )
 
-
-
-
-
-
-
+db.coll.update({"_id": 1}, {$set: {"year": 2016, name: "Max"}})
 //6. Uppdatera Astrid Lindgren så att hon har några fler böcker.
+db.author.updateOne({author: "Astrid Lindgren", $set: {books: [
+  "Bok 1",
+  "Bok 2",
+  "Bok 3"
+] }})
+
+
 /*7. Lägg till minst två författare med insertMany med följande key:value -
 author, birth, books (som en array), language, genres (som en array), death.*/
 //8. Visa samtliga författare.
