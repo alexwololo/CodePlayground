@@ -1,0 +1,101 @@
+https://www.mongodb.com/docs/manual/reference/mongo-shell/
+https://www.mongodb.com/docs/manual/crud/
+
+MongoDB
+ATLAS cloud
+Compass
+mongosho
+
+//(Kopplar upp sig mot en lokal MongoDB)
+mongosh
+
+//MongoDB Help
+//To get a list of commands, type db.help() in MongoDB client. This will give you a list of commands as shown in the following screenshot.
+db.help()
+help
+
+//(Växlar till den databasen, skapar/öppnar)
+use <db>
+
+//(Visaren lista på collections i aktuell databas)
+show collections
+
+//clears screen
+cls
+
+//show documents in collection - pretty
+db.authors.find({}).pretty()
+
+//Create new database
+//To create a new database execute the following command.
+use DATABASE_NAME
+
+//show databases
+show dbs
+
+//show general info about all databases
+db.stats()
+
+//Know your current selected database
+//To know your current working/selected database execute the following command
+db
+
+//Drop database
+//To drop the database execute following command, this will drop the selected database
+db.dropDatabase()
+
+//Similarly, you could get rid of a single collection in a database via
+db.myCollection.drop().
+
+//Create collection
+//To create the new collection execute the following commands
+db.createCollection(name)
+
+//To check collections list
+//To get the list of collections created execute the following command
+Show collections
+
+//Drop collection
+//To drop the selected collection execute the following command
+db.COLLECTION_NAME.drop()
+
+//Insert document in collection
+db.COLLECTION_NAME.insert(document)
+//To insert single document in selected collection execute the following command
+db.Employee.insert({name: 'Emp1',address: 'Pune'})
+WriteResult({"nInserted" : 1})
+db.Employee.insert({name: 'Emp2',address: 'Mumbai'})
+WriteResult({"nInserted" : 1})
+//To insert multiple documents in selected collection execute following command
+//https://blog.e-zest.com/basic-commands-for-mongodb see 11
+
+
+//add custom id
+_id: 1
+_id: "test-123"
+
+//Get collection document
+//To get the list documents in collection execute the following command
+>db.COLLECTION_NAME.find()
+
+//Update document
+//To update the document in collection execute the following command
+>db.COLLECTION_NAME.update(SELECTION_CRITERIA, UPDATED_DATA)
+
+// Save document
+// To save document in collection execute the following command
+>db.COLLECTION_NAME.save({_id:ObjectId(),NEW_DATA})
+
+
+// Delete document
+// To delete document in selected collection execute the following command
+>db.COLLECTION_NAME.remove(DELLETION_CRITTERIA)
+
+
+// find gives cursor object - not the element itself
+db.pass.find({})
+db.pass.find({}).toArray() // gives array
+
+// projection
+db.pass.find({}, {name: 1}) //show only name
+db.pass.find({}, {name: 1, _id: 0}) //exclude id
