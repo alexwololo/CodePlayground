@@ -87,7 +87,7 @@ h1 {
   transition: background 0.5s ease-in-out;
 }
 
-/* Arrows Base */
+/* Arrow base */
 #timeline div:before {
   content: '';
   position: absolute;
@@ -97,16 +97,46 @@ h1 {
   border-style: solid;
 }
 
-/* Right Side Arrows */
+/* Right side arrow */
 #timeline ul li:nth-child(odd) div:before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent var(--secondary-color) transparent transparent;
 }
 
-/* Left Side Arrows */
+/* Left side arrow */
 #timeline ul li:nth-child(even) div:before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent var(--secondary-color);
+}
+
+@media(max-width: 900px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -284px;
+  }
+}
+
+@media(max-width: 600px) {
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 40px;
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
 }
