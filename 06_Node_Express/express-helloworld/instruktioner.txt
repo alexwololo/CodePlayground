@@ -1,0 +1,18 @@
+https://expressjs.com/en/starter/hello-world.html
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+1. Skapa package.json fil
+npm init
+
+2. Installera Express (lokalt i den katalog du har filerna)
+npm install express
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js
+
+Gå till http://localhost:3000 i en browser

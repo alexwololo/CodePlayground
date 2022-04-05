@@ -1,0 +1,27 @@
+https://expressjs.com/en/guide/writing-middleware.html
+https://expressjs.com/en/guide/using-middleware.html
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+1. Skapa package.json fil
+npm init
+
+2. Installera Express (lokalt i den katalog du har filerna)
+npm install express
+
+3. Installera body-parser (https://expressjs.com/en/resources/middleware/body-parser.html)
+npm install body-parser
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js
+
+1. Gå till http://localhost:3000 i en browser (Då ska index.html i katalogen public visas)
+2. Gå till http://localhost:3000/user/1 (Eller 2 eller något annat "id". Då ska id:et skrivas ut på sidan)
+3. Använd t ex Postman för att prova http-requests för (t ex post) https://www.getpostman.com
+////////////////////////////////////////////////////////////////////////////////////////////////////
+Gå till http://localhost:3000/user och välj POST som metod i Postman. skriv in firstname och lastname med värden (samma som i post.html i public-katalogen)
+4. Gå till http://localhost:3000 och klicka på länken till formuläret. Fyll sedan i textfälten för förnamn och efternamn och kolla att du får samma resultat i webbläsaren som i steg 3

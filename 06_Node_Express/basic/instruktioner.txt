@@ -1,0 +1,11 @@
+https://nodejs.org/en/docs/guides/getting-started-guide/
+
+------
+
+app.js
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js
+
+Gå till http://127.0.0.1:3000 i en browser
+

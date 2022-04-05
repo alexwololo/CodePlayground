@@ -1,0 +1,21 @@
+https://expressjs.com/en/guide/routing.html
+
+------
+
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+1. Skapa package.json fil
+npm init
+
+2. Installera Express (lokalt i den katalog du har filerna)
+npm install express
+
+-----
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js
+
+Använd t ex Postman för att prova http-requests för (t ex post, put, delete) https://www.getpostman.com
+http://localhost:3000
+
+(Kolla i app.js vilka endpoints som finns och testa tillsammans med rätt metod (t ex post)
