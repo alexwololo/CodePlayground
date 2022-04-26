@@ -6,9 +6,9 @@
   --animate-speed: 2s;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: Arial, Helvetica, sans-serif;

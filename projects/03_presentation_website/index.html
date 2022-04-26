@@ -88,7 +88,24 @@
       </div>
     </section>
 
-    <!-- <script
+    <!-- <script>
+      const btns = document.querySelectorAll('.btn');
+      btns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const id = btn.getAttribute('href');
+          const section = document.getElementById(id.split('#')[1]);
+
+          setTimeout(() => {
+            window.scrollTo({
+              top: section.offsetTop,
+              behavior: 'smooth',
+            });
+          }, 80);
+        });
+      }); -->
+    </script>
+    <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
@@ -104,10 +121,10 @@
             {
               scrollTop: $(hash).offset().top,
             },
-            800
+            400
           );
         }
       });
-    </script> -->
+    </script>
   </body>
 </html>
