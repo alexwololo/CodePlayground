@@ -1,18 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useState } from "react";
 import {
   StyleSheet,
   Text,
   View,
+  ImageBackground,
   Button,
   TextInput,
   ScrollView,
   // Flatlist only render needed items lazily, better for performance
   FlatList,
-} from 'react-native';
+  TouchableOpacity,
+} from "react-native";
 
-import GoalItem from './components/GoalItem';
-import GoalInput from './components/GoalInput';
+import { StatusBar } from "rn-status-bar";
+
+import GoalItem from "./components/GoalItem";
+import GoalInput from "./components/GoalInput";
+import Data from "./components/Data";
 
 export default function App() {
   // create initially empty array since no list to start with
@@ -32,33 +36,46 @@ export default function App() {
 
   function deleteGoalHandler(id) {
     setCourseGoals((currentCourseGoals) => {
-       return currentCourseGoals.filter((goal) => goal.id !== id);
+      return currentCourseGoals.filter((goal) => goal.id !== id);
     }); // if goal id is false tehn id are equal and then item will be be dropped and new item wont no longer contain it
-    console.log('Delete');
+    console.log("Delete");
   }
 
   return (
     <View style={styles.appContainer}>
-      <GoalInput onAddGoal={addGoalHandler} />
-      <View style={styles.goalsContainer}>
-        <FlatList
-          data={courseGoals}
-          renderItem={(itemData) => {
-            return (
-              <GoalItem
-                text={itemData.item.text}
-                id={itemData.item.id}
-                onDeleteItem={deleteGoalHandler}
-              />
-            );
-          }}
-          keyExtractor={(item, index) => {
-            return item.id;
-          }}
-          alwaysBounceVertical={false}
-        />
+      <View>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="#557B83"
+        ></StatusBar>
       </View>
-      <StatusBar style="auto" />
+
+      <ImageBackground
+        source={require("./assets/images/DV.jpg")}
+        //resizeMode="cover"
+        style={styles.appContainer}
+      >
+        <GoalInput onAddGoal={addGoalHandler} />
+        <View style={styles.goalsContainer}>
+          <FlatList
+            data={courseGoals}
+            renderItem={(itemData) => {
+              return (
+                <GoalItem
+                  text={itemData.item.text}
+                  id={itemData.item.id}
+                  onDeleteItem={deleteGoalHandler}
+                />
+              );
+            }}
+            keyExtractor={(item, index) => {
+              return item.id;
+            }}
+            alwaysBounceVertical={false}
+          />
+        </View>
+        <Data />
+      </ImageBackground>
     </View>
   );
 }
@@ -68,8 +85,15 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     paddingHorizontal: 16,
+    backgroundColor: "#222",
   },
   goalsContainer: {
     flex: 5,
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
+  },
+  swapi: {
+    color: "white",
+    padding: 20,
+    margin: 20,
   },
 });

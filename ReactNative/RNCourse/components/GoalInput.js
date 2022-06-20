@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { View, TextInput, Button, StyleSheet, Image } from 'react-native';
 
 function GoalInput(props) {
   const [enteredGoalText, setEnteredGoalText] = useState('');
@@ -15,18 +15,19 @@ function GoalInput(props) {
 
   return (
     <View style={styles.inputContainer}>
-    <TextInput
-      style={styles.textInput}
-      placeholder="Your course goal!"
-      onChangeText={goalInputHandler}
-      value={enteredGoalText}
-    />
-    <View style={styles.buttonContainer}>
-      <View style={styles.button}>
-        <Button title="Add Goal" onPress={addGoalHandler} />
+      <TextInput
+        style={styles.textInput}
+        placeholder="Add a task and press to delete it!!"
+        onChangeText={goalInputHandler}
+        value={enteredGoalText}
+      />
+
+      <View style={styles.buttonContainer}>
+        <View style={styles.button}>
+          <Button title="Add Goal" onPress={addGoalHandler} />
+        </View>
       </View>
     </View>
-  </View>
   );
 }
 
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     borderBottomWidth: 1,
     borderBottomColor: '#cccccc',
-    marginTop: 200,
   },
   textInput: {
     borderWidth: 1,
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
     width: '70%',
     marginRight: 8,
     padding: 8,
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
   },
   buttonContainer: {
     marginTop: 16,
