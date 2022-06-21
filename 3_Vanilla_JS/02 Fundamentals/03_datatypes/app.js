@@ -32,6 +32,9 @@ console.log(today);
 console.log(typeof today);
 
 // Functions
+// a function is a snippet of code that performs a specific task
+
+// a METHOD is just a function that is accosiated with a perticular object/datatype
 
 // Dates
 
