@@ -52,13 +52,13 @@ const id = 100;
 
 const color = 'yellow';
 
-// if(color === 'red'){
-//   console.log('Color is red');
-// } else if(color === 'blue'){
-//   console.log('Color is blue');
-// } else {
-//   console.log('Color is not red or blue');
-// }
+if(color === 'red'){
+  console.log('Color is red');
+} else if(color === 'blue'){
+  console.log('Color is blue');
+} else {
+  console.log('Color is not red or blue');
+}
 
 // LOGICAL OPERATORS
 
@@ -81,7 +81,8 @@ if(age < 16 || age > 65){
   console.log(`${name} is registered for the race`);
 }
 
-// TERNARY OPERATOR
+// TERNARY OPERATOR : ?
+// correct = 100, incorrect != 100
 console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
 
 // WITHOUT BRACES
