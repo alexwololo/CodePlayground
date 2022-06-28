@@ -98,3 +98,6 @@ console.log('Age is:', age2);
 
 // console.log(result);
 
+// add = (x, y) => x + y;
+// let summa = add(10, 10);
+// console.log(summa);
