@@ -83,6 +83,7 @@ console.log('Age is:', age2);
 // removes keyword function
 // if 0 or more then one parameter then del ()
 // if only one line needed for return then we can move it up one line and delete {}
+
 const age = (currentYear) => currentYear - 1984;
 
 const age2 = age(2022);
@@ -98,3 +99,56 @@ console.log('Age is:', age2);
 
 // console.log(result);
 
+/*
+// Define the function
+function go() {
+  alert('hi');
+  alert('Yo!');
+}
+// call the function
+go();
+
+
+//add parameters
+function go(name, age) {
+  // params used like variables within the function
+  alert(name);
+  alert(age);
+}
+// add arguments
+// arguments make functions reusable
+go('Will', 34);
+go('Anna', 25);
+
+// what is passed into from the promt into the variable inputHere = return
+const inputHere = prompt();
+*/
+
+// every function will return undefined unless given a value to return
+function add(first, second) {
+  return first + second;
+}
+let addSum = add(2, 2);
+console.log(addSum);
+
+// const add = (first, second) => first + second;
+// const addSum = add(2, 2);
+// console.log(addSum);
+
+function subtract(first, second) {
+  return first - second;
+}
+let sub = subtract(20, 10);
+console.log(sub);
+
+// const subtract = (first, second) => first - second;
+// const sub = subtract(10, 5);
+// console.log(sub);
+
+
+n=2
+
+if(n === 1)
+console.log('You have 1 new message');
+else
+console.log(`You have ${n} new messages`);
