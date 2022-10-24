@@ -1,6 +1,5 @@
 # BASIC
 
-
 # Commands
 
 ## pwd
@@ -18,8 +17,6 @@ creates .js file
 ## mkdir test
 
 creates a folder called test
-
-
 
 ## start test.js
 
@@ -91,9 +88,19 @@ see all config entries, our new added command should be here
 
 our new command and it can also be combined as here where we only show history of our old file
 
-
 ## git mv index.html trash.html
+
 rename a file from old to new name
 
 ## git add -u
 
+updates
+
+## git add -A
+
+updates all files
+
+## .gitignore
+
+this files contains the filenames of what is not sent to github \*html excludes
+all html files for example
