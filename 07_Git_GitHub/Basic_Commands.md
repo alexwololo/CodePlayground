@@ -85,3 +85,7 @@ see all config entries, our new added command should be here
 ## git history -- test.js
 
 our new command and it can also be combined as here where we only show history of our old file
+
+
+## git mv index.html trash.html
+rename a file from old to new name
