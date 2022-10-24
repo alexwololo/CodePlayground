@@ -1,16 +1,11 @@
+# BASIC
+
+
 # Commands
 
 ## pwd
 
 show path
-
-## ls
-
-show files
-
-## ls -al
-
-list all files and folders
 
 ## cd ..
 
@@ -24,13 +19,7 @@ creates .js file
 
 creates a folder called test
 
-## rm
 
-remove file
-
-## rm -rf
-
-remove copywrited files
 
 ## start test.js
 
@@ -42,9 +31,25 @@ resets the terminal
 
 <!-- ////////// -->
 
-## git help log
+## git help & git help log
 
 see help
+
+## git ls
+
+show files
+
+## git ls -al
+
+list all files and folders
+
+## git rm test.js
+
+remove file
+
+## git rm -rf test.js
+
+remove copywrited files
 
 ## git ls-files
 
@@ -89,3 +94,6 @@ our new command and it can also be combined as here where we only show history o
 
 ## git mv index.html trash.html
 rename a file from old to new name
+
+## git add -u
+
