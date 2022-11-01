@@ -44,3 +44,10 @@ change branch to main
 ## git merge test
 
 merges the test branch INTO the current branch
+
+## git branch -d updates
+
+deletes the updates branch
+
+
+## git branch -v -a
