@@ -52,6 +52,25 @@ set upstream
 
 deletes the updates branch
 
-## git branch -v -a
+## git branch -a -v
 
-???
+shows all branches and versions
+
+## cat README.md
+shows the content of the file
+
+
+## git tag mytag
+adds a tag
+
+## git tag --list
+shows tags
+
+## git tag -d mytag
+deletes tag
+
+## git tag -a v1.0 -m "Release 1.0"
+adds annotated tag
+
+## git show v1.0
+shows info 
