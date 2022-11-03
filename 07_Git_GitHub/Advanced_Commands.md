@@ -45,6 +45,9 @@ change branch to main
 
 merges the test branch INTO the current branch
 
+## git push --set-upstream origin test
+set upstream
+
 ## git branch -d updates
 
 deletes the updates branch
