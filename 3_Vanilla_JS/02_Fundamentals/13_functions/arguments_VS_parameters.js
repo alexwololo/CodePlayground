@@ -1,30 +1,18 @@
 // ARGUMENTS & PARAMETERS
 
 const functionName = function (parameter) {
-  console.log(`${parameter}`);
+    console.log(`${parameter}`);
 };
-functionName('argument');
+functionName("argument");
 
-// 'name' is a local variable, usable inside the {codeblock}
-// when the value of the argument tear('river') is passed into the variable 'name', its called a parameter
+// An argument is a value passed into a function when it is called, while a parameter is a variable defined in the function definition and used to receive the argument. For example:
 
-const tear = function (name) {
-  console.log(`cry me a ${name}`);
-};
+function addNumbers(a, b) {
+    return a + b;
+}
 
-// 'river' is a argument
-tear('river');
+let x = 5;
+let y = 10;
+let result = addNumbers(x, y); // a = x, b = y
 
-// Multiple arguments, parameters
-const weather = function (stat, when) {
-  console.log(`Hello, it is: ${stat} ${when}`);
-};
-
-weather('sunny', 'today');
-
-// standard values / placeholders
-const standard = function (stat = 'Placeholder01', when = 'Placeholder02') {
-  console.log(`We are using: ${stat} ${when}`);
-};
-
-standard();
+// In this example, the function addNumbers has two parameters, a and b. When the function is called with addNumbers(x, y), x becomes the argument for the parameter a and y becomes the argument for the parameter b.
