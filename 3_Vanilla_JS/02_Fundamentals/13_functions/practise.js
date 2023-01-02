@@ -4,6 +4,10 @@ function add(x, y) {
 }
 add(1, 2);
 
+// create a simple arrow funktion that add two numbers
+let add = (a, b) => a + b;
+
+console.log(add(2, 3));
 // create a function that take a name and adds it to a sentence
 function greet(name) {
     return "Hello, " + name + "!";
