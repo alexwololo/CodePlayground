@@ -22,3 +22,9 @@ Här är ett exempel på ett JSON-objekt:
 ```
 
 I det här exemplet har vi ett JSON-objekt som representerar en person med nyckel-värde-par för namnet, åldern, anställningsstatusen och en lista med färdigheter. Objektet har också ett värde för adress som är ett annat JSON-objekt med information om gatan, staden och staten. JSON-objekt används ofta för att lagra och överföra data mellan olika applikationer, särskilt i samband med webbtjänster och API:er (Application Programming Interfaces).
+
+# JSON VS JS objekt
+
+En viktig skillnad är att objekt i JavaScript kan innehålla funktioner, medan JSON-objekt endast kan innehålla data. Dessutom är objekt i JavaScript en del av språket och kan manipuleras och användas direkt i JavaScript-koden, medan JSON-objekt måste omvandlas till JavaScript-objekt innan de kan användas.
+
+Så, sammanfattningsvis, är JSON ett textformat som används för att skicka data mellan olika applikationer, medan objekt i JavaScript är en datastruktur som används inom JavaScript för att lagra data, inklusive funktioner
