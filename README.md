@@ -71,3 +71,23 @@ console.log(slumpSiffra);
 
 // Anropa funktionen för att visa en slumpmässig siffra
 visaRandomSiffra();
+
+# skämt funktion
+
+Funktionen getRandomJoke innehåller en array jokes som innehåller olika skämt. Sedan genereras ett slumpmässigt index genom att använda Math.random()-funktionen och Math.floor() för att avrunda ner till närmaste heltal. Det slumpmässiga indexet används för att hämta ett slumpmässigt skämt från arrayen, som sedan returnera
+
+function getRandomJoke() {
+const jokes = [
+"Why don't scientists trust atoms? Because they make up everything!",
+"I'm reading a book about anti-gravity. It's impossible to put down!",
+"What's the best thing about Switzerland? I don't know, but the flag is a big plus!",
+"I used to play piano by ear, but now I use my hands and fingers instead.",
+"What's orange and sounds like a parrot? A carrot!",
+"Why don't skeletons fight each other? They don't have the guts!",
+"I told my wife she should embrace her mistakes. She hugged me.",
+"Why did the bicycle fall over? Because it was two-tired!"
+];
+
+const randomIndex = Math.floor(Math.random() \* jokes.length);
+return jokes[randomIndex];
+}
