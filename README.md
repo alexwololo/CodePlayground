@@ -91,3 +91,6 @@ const jokes = [
 const randomIndex = Math.floor(Math.random() \* jokes.length);
 return jokes[randomIndex];
 }
+
+const randomJoke = getRandomJoke();
+console.log(randomJoke);
