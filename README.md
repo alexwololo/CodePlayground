@@ -83,7 +83,7 @@ const jokes = [
 "What's the best thing about Switzerland? I don't know, but the flag is a big plus!",
 "I used to play piano by ear, but now I use my hands and fingers instead.",
 "What's orange and sounds like a parrot? A carrot!",
-"Why don't skeletons fight each other? They don't have the guts!",
+"Why don't skeletons fight each other? They don't have the guts!!",
 "I told my wife she should embrace her mistakes. She hugged me.",
 "Why did the bicycle fall over? Because it was two-tired!"
 ];
@@ -94,3 +94,31 @@ return jokes[randomIndex];
 
 const randomJoke = getRandomJoke();
 console.log(randomJoke);
+
+function genereraDadJoke() {
+const frågor = [
+"Vad heter en björn utan tänder?",
+"Varför gräver katter hål i trädgården?",
+"Varför kan inte dinosaurier spela gitarr?",
+"Vad sa den ena bokstaven till den andra?",
+"Varför blir inte skelett på sjukhus rädda?"
+];
+
+const svar = [
+"En barbjörn!",
+"För att leta efter katt-skatter!",
+"För att de är utdöda!",
+"Jag tror jag ser land!",
+"För att de har mod i märgen!"
+];
+
+const slumpIndex = Math.floor(Math.random() \* frågor.length);
+const slumpFråga = frågor[slumpIndex];
+const slumpSvar = svar[slumpIndex];
+
+return `${slumpFråga} ${slumpSvar}`;
+}
+
+// Användning:
+const dadJoke = genereraDadJoke();
+console.log(dadJoke);
