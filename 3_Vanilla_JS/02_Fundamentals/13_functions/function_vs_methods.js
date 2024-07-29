@@ -21,3 +21,31 @@ console.log(resultTwo);
  *
  *Invoke method: person.toUpperCase()
  */
+
+
+ /**
+  * const person = 'Alex'
+
+//funktioner
+const hälsa = () => 'hej'
+let resultatEtt = hälsa();
+console.log(resultatEtt);
+
+//metoder
+let resultatTvå = person.toUpperCase()
+console.log(resultatTvå);
+
+
+/**
+ * FUNKTION
+ * En funktion är ett kodblock som gör något specifikt. Den kan anropas och köras när som helst i koden.
+ *
+ * Anropa funktion: hälsa()
+ *
+ * METODER
+ * En metod är en funktion men är associerad med ett objekt eller en datatyp OCH skiljer sig i sättet vi anropar dem och var de är definierade. Metoder anropas med punktnotation.
+ *
+ * Anropa metod: person.toUpperCase()
+ */
+
+  */
