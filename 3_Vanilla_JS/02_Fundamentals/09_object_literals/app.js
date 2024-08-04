@@ -76,3 +76,5 @@ let car = {
 console.log(car.make); // Output: Toyota
 console.log(car.features[0]); // Output: Bluetooth
 console.log(car.owner.name); // Output: Alice
+
+console.log(car.owner.name); // Output: Alice
