@@ -61,3 +61,29 @@ console.log(numbers);
 console.log(val);
 
 console.log(fruit[2]);
+
+
+
+// for fun
+# Array med en Space Marine's utrustning
+space_marine_gear = [
+    "Power Armor",          # Robust rustning som ger skydd och styrka
+    "Bolter",               # Standard stormgevär
+    "Chainsword",           # Ett närstridsvapen som kombinerar ett svärd med motorsågsliknande tänder
+    "Frag Grenades",        # Standard granater för att orsaka sprängskador
+    "Krak Grenades",        # Specialiserade granater för att bekämpa pansar
+    "Combat Knife",         # Ett kraftigt kniv för närstrid
+    "Helmet with HUD",      # Hjälm med Heads-Up Display (HUD) för ökad situational awareness
+    "Backpack Power Unit",  # Strömkälla för rustningen och utrustningen
+    "Purity Seals",         # Symboliska sigill som representerar tro och renhet
+    "Auspex Scanner",       # En handhållen scanner för att upptäcka fiender och anomalier
+    "Medical Supplies",     # Första hjälpen-kit och andra medicinska förnödenheter
+    "Ammo Pouches",         # Fickor och bälten för att bära extra ammunition
+    "Communicator",         # En kommunikationsenhet för att hålla kontakten med enhetens ledning
+    "Holy Relics",          # Heliga föremål som ger andligt stöd och moral
+    "Servo Arm (optional)", # Mekanisk arm för att utföra reparationer och lyfta tunga föremål
+]
+
+# Visa listan
+for item in space_marine_gear:
+    print(item)
