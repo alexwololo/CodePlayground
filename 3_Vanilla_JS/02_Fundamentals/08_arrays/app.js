@@ -87,3 +87,122 @@ space_marine_gear = [
 # Visa listan
 for item in space_marine_gear:
     print(item)
+
+
+    //
+
+    {
+      "character": {
+        "name": "Archmaster Aodhan",
+        "player": "Kim",
+        "kin": "Human",
+        "profession": "Mage (Elementarist)",
+        "weakness": "Enchanted: You always stay at the back of the group.",
+        "appearance": "Tall and wiry. Long white beard and bushy eyebrows. Inquisitive eyes.",
+        "background_story": "From an early age you have been fascinated with fire. Your sorcerous mother brought you to a school of magicians after you accidentally burned down a barn on the family farm. At school you learned the secrets of magic, but the thirst for deeper knowledge made you restless. Now, after a few years of extensive travel, you have joined a company of adventurers for an expedition to the Misty Vale."
+      },
+      "attributes": {
+        "strength": 8,
+        "constitution": 11,
+        "agility": 9,
+        "intelligence": 16,
+        "willpower": 18,
+        "charisma": 14
+      },
+      "conditions": {
+        "strength": "Exhausted",
+        "constitution": "Scaly",
+        "agility": "Bored",
+        "intelligence": "Angry",
+        "willpower": "Scared",
+        "charisma": "Disheartened"
+      },
+      "skills": {
+        "acrobatics": 5,
+        "awareness": 9,
+        "beast_lore": 6,
+        "boating": 4,
+        "brawling": 7,
+        "crafting": 3,
+        "healing": 7,
+        "hunting_fishing": 4,
+        "languages": 14,
+        "law_legends": 9,
+        "leadership": 12,
+        "persuasion": 12,
+        "seamanship": 4,
+        "sleight_of_hand": 10,
+        "sneaking": 9,
+        "song": 5,
+        "swimming": 5
+      },
+      "weapon_skills": {
+        "axes": 7,
+        "bows": 5,
+        "crossbows": 7,
+        "daggers": 9,
+        "hammers": 6,
+        "knives": 8,
+        "slings": 6,
+        "spears": 6,
+        "staves": 14,
+        "swords": 8
+      },
+      "secondary_skills": {
+        "elementalism": 14
+      },
+      "abilities_spells": [
+        "Adaptive",
+        "Fireball",
+        "Pillar",
+        "Gust of Wind",
+        "Heat/Chill",
+        "Puff of Smoke",
+        "Ignite"
+      ],
+      "inventory": [
+        "Spellbook",
+        "Torch",
+        "Warm diary full of your experience and discoveries.",
+        "Flint & Tinder"
+      ],
+      "currency": {
+        "gold": 0,
+        "silver": 7,
+        "copper": 5
+      },
+      "armor": {
+        "bane_on": ["Sneaking", "Evade"]
+      },
+      "helmet": {
+        "bane_on": ["Awareness", "Ranged Attacks"]
+      },
+      "weapon_shield": {
+        "staff": {
+          "grip": "2h",
+          "range": 2,
+          "damage": "DR 8",
+          "features": ["Bludgeoning", "Toppling"]
+        }
+      },
+      "willpower_points": {
+        "total": 18,
+        "used": 0
+      },
+      "hit_points": {
+        "total": 11,
+        "used": 0
+      },
+      "death_rolls": {
+        "successes": 0,
+        "failures": 0
+      },
+      "special_abilities": {
+        "adaptive": {
+          "willpower_points": 3
+        },
+        "magic": {
+          "willpower_points": "Varies"
+        }
+      }
+    }
