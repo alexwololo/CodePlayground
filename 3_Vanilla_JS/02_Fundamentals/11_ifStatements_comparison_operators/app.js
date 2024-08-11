@@ -52,9 +52,9 @@ const id = 100;
 
 const color = 'yellow';
 
-if(color === 'red'){
+if (color === 'red') {
   console.log('Color is red');
-} else if(color === 'blue'){
+} else if (color === 'blue') {
   console.log('Color is blue');
 } else {
   console.log('Color is not red or blue');
@@ -66,16 +66,16 @@ const name = 'Steve';
 const age = 70;
 
 // AND &&
-if(age > 0 && age < 12){
+if (age > 0 && age < 12) {
   console.log(`${name} is a child`);
-} else if(age >= 13 && age <= 19){
+} else if (age >= 13 && age <= 19) {
   console.log(`${name} is a teenager`);
 } else {
   console.log(`${name} is an adult`);
 }
 
 // OR ||
-if(age < 16 || age > 65){
+if (age < 16 || age > 65) {
   console.log(`${name} can not run in race`);
 } else {
   console.log(`${name} is registered for the race`);
@@ -86,12 +86,8 @@ if(age < 16 || age > 65){
 console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
 
 // WITHOUT BRACES
-if(id === 100)
-  console.log('CORRECT');
-else
-  console.log('INCORRECT');
+if (id === 100) console.log('CORRECT');
+else console.log('INCORRECT');
 
-if(id === 100)
-  console.log('CORRECT');
-else
-  console.log('INCORRECT');
+if (id === 100) console.log('CORRECT');
+else console.log('INCORRECT');

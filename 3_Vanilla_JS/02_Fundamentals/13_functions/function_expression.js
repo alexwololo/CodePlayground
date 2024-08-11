@@ -21,4 +21,16 @@ const square = function (x = 3) {
 
 console.log(square());
 
+// Function expression to calculate damage in a role-playing game
+const calculateDamage = function (strength, diceRoll) {
+  const baseDamage = 5; // Base damage from the attack
+  const damage = baseDamage + strength * 0.5 + diceRoll; // Damage formula
+  return damage; // Return the total damage
+};
 
+// Example usage:
+const playerStrength = 10; // Player's strength stat
+const diceRoll = Math.floor(Math.random() * 6) + 1; // Simulate a D6 dice roll
+
+const damageDealt = calculateDamage(playerStrength, diceRoll); // Calculate damage
+console.log(`You dealt ${damageDealt} damage!`); // Output the damage dealt
