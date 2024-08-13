@@ -78,3 +78,45 @@ console.log(car.features[0]); // Output: Bluetooth
 console.log(car.owner.name); // Output: Alice
 
 console.log(car.owner.name); // Output: Alice
+
+const goblinScout = {
+  name: 'Goblin - Scout',
+  attributes: {
+    skadebonusSTY: 'D4',
+    skadebonusSMI: 'D6',
+    förflyttning: 12,
+  },
+  stats: {
+    kroppspoäng: 9,
+    viljepoäng: 10,
+  },
+  färdigheter: {
+    awareness: 10,
+    bows: 12,
+    evade: 10,
+    sneaking: 12,
+    swords: 10,
+  },
+  vapen: [
+    { name: 'Short Bow', skill: 12, damage: 'D10' },
+    { name: 'Short Sword', skill: 10, damage: 'D10' },
+  ],
+  rustning: 'Leather (1)',
+  egenskaper: {
+    nonMonster: 'Goblins do not count as monsters in combat, but as ordinary NPCs.',
+    nocturnal:
+      'In direct sunlight, goblins get a bane on all rolls and suffer D6 damage per stretch. A thick layer of clouds or full-cover clothing are enough to avoid the effect.',
+  },
+  beskrivning: `
+    Goblins are children of the night and shadows. They are relatively small and skinny,
+    but have disproportionately long arms and big, bulbous heads. They primarily make
+    their living hunting, growing mushrooms, and trading with other creatures, mainly
+    orcs and humans, but there are also warlike, aggressive clans specialized in looting
+    and piracy. Many thieves' guilds also have a large goblin membership. They are cunning
+    creatures who often resort to traps, ambushes, and poisons when attacking their victims.
+    For this reason, there are many who despise the goblins and see them as devious,
+    dishonorable cowards.
+  `,
+};
+
+console.log(goblinScout);
