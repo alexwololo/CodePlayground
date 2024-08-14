@@ -120,3 +120,39 @@ const goblinScout = {
 };
 
 console.log(goblinScout);
+
+function displayGoblinScout(goblin) {
+  console.log(`=== ${goblin.name} ===`);
+  console.log('--- Attributes ---');
+  for (const [key, value] of Object.entries(goblin.attributes)) {
+    console.log(`${key}: ${value}`);
+  }
+
+  console.log('\n--- Stats ---');
+  for (const [key, value] of Object.entries(goblin.stats)) {
+    console.log(`${key}: ${value}`);
+  }
+
+  console.log('\n--- Skills ---');
+  for (const [skill, level] of Object.entries(goblin.färdigheter)) {
+    console.log(`${skill}: ${level}`);
+  }
+
+  console.log('\n--- Weapons ---');
+  goblin.vapen.forEach((weapon) => {
+    console.log(`${weapon.name} (Skill: ${weapon.skill}, Damage: ${weapon.damage})`);
+  });
+
+  console.log(`\n--- Armor ---\n${goblin.rustning}`);
+
+  console.log('\n--- Special Abilities ---');
+  for (const [ability, description] of Object.entries(goblin.egenskaper)) {
+    console.log(`${ability}: ${description}`);
+  }
+
+  console.log('\n--- Description ---');
+  console.log(goblin.beskrivning);
+}
+
+// Använd funktionen för att visa goblin-scoutens egenskaper
+displayGoblinScout(goblinScout);
