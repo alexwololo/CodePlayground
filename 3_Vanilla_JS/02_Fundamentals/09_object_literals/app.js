@@ -156,3 +156,5 @@ function displayGoblinScout(goblin) {
 
 // Använd funktionen för att visa goblin-scoutens egenskaper
 displayGoblinScout(goblinScout);
+
+displayGoblinScout(goblinScout);
