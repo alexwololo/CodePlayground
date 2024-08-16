@@ -91,3 +91,22 @@ else console.log('INCORRECT');
 
 if (id === 100) console.log('CORRECT');
 else console.log('INCORRECT');
+
+function enkelStrid(attackVarde, forsvarVarde, skada) {
+  // Simulerar en tärningsrullning med en 20-sidig tärning
+  const t20 = Math.floor(Math.random() * 20) + 1;
+
+  if (t20 <= attackVarde) {
+    let totalSkada = skada - forsvarVarde;
+    if (totalSkada < 0) {
+      totalSkada = 0;
+    }
+    return `Attacken träffade! Försvararen tog ${totalSkada} skada.`;
+  } else {
+    return 'Attacken missade!';
+  }
+}
+
+// Exempel på användning av funktionen
+const resultat = enkelStrid(14, 5, 10);
+console.log(resultat);
